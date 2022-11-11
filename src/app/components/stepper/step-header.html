@@ -1,0 +1,5 @@
+<div class="mat-step-text-label" *ngIf="_templateLabel()">
+  <ng-container [ngTemplateOutlet]="_templateLabel()!.template"></ng-container>
+</div>
+<!-- If there is no label template, fall back to the text label. -->
+<div class="mat-step-text-label" *ngIf="_stringLabel()">{{label}}</div>

@@ -1,0 +1,24 @@
+<main>
+  <h1>Components</h1>
+  <pct-stepper>
+    <pct-step>
+      <ng-template pctStepLabel>my step label 1</ng-template>
+      <p>this some content</p>
+      <h2>heading 2</h2>
+      <button pctStepperNext>next</button>
+    </pct-step>
+    <pct-step>
+      <ng-template pctStepLabel>my step label 2</ng-template>
+      <p>this some more content</p>
+      <h2>another 2</h2>
+      <button pctStepperPrevious>previous</button>
+      <button pctStepperNext>next</button>
+    </pct-step>
+    <pct-step>
+      <ng-template pctStepLabel>my step label 3</ng-template>
+      <button pctStepperPrevious>previous</button>
+      <button>finalizar</button>
+    </pct-step>
+  </pct-stepper>
+  <router-outlet></router-outlet>
+</main>

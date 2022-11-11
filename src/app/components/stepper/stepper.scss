@@ -1,0 +1,28 @@
+.pct {
+  &-step-header {
+    all: unset;
+    display: block;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: 3px dotted #0380e3;
+      outline-offset: 2px;
+    }
+
+    &[data-active="true"] {
+      color: #0380e3;
+    }
+  }
+
+  &-stepper {
+    &-header {
+      display: flex;
+      align-items: center;
+
+      > * + * {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
